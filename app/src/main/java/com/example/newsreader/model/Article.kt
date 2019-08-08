@@ -13,6 +13,9 @@ class Article {
     @field: SerializedName("title")
     var title: String? = null
 
+    @field: SerializedName("description")
+    var description: String? = null
+
     @field: SerializedName("url")
     var url: String? = null
 

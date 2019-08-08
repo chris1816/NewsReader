@@ -10,6 +10,6 @@ class Response {
     @field: SerializedName("totalResults")
     var totalResults: Int? = null
 
-    @field: SerializedName("news")
+    @field: SerializedName("articles")
     var articles: List<Article>? = null
 }

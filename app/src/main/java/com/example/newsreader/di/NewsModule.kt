@@ -1,6 +1,7 @@
 package com.example.newsreader.di
 
 import com.example.newsreader.Constant.Companion.BASE_URL
+import com.example.newsreader.NewsRepository
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
@@ -17,4 +18,9 @@ class NewsModule {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
+
+/*    @Provides
+    fun getRepository(): NewsRepository {
+        return NewsRepository()
+    }*/
 }
