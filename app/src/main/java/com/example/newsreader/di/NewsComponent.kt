@@ -1,6 +1,6 @@
 package com.example.newsreader.di
 
-import com.example.newsreader.NewsRepository
+import com.example.newsreader.data.NewsRepository
 import dagger.Component
 
 @Component(modules = [NewsModule::class])

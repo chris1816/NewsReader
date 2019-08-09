@@ -1,6 +1,6 @@
 package com.example.newsreader.network
 
-import com.example.newsreader.model.Response
+import com.example.newsreader.data.model.Response
 import retrofit2.Call
 import retrofit2.http.GET
 

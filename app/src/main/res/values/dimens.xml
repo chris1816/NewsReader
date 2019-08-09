@@ -2,4 +2,5 @@
 <resources>
 
     <dimen name="margin_cardview">2dp</dimen>
+    <dimen name="image_size">150dp</dimen>
 </resources>

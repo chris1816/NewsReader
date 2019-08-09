@@ -2,4 +2,7 @@
     <string name="app_name">NewsReader</string>
     <string name="textview">TextView</string>
     <string name="news_image">News Image</string>
+    <string name="unknown">Author: unknown</string>
+    <string name="no_description">this news has no description</string>
+    <string name="no_image">this news has no image…</string>
 </resources>

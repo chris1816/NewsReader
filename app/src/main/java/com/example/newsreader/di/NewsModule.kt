@@ -1,7 +1,5 @@
 package com.example.newsreader.di
 
-import com.example.newsreader.Constant.Companion.BASE_URL
-import com.example.newsreader.NewsRepository
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
@@ -9,6 +7,10 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 @Module
 class NewsModule {
+
+    companion object {
+        const val BASE_URL = "https://newsapi.org"
+    }
 
     @Provides
     fun getRetrofit(): Retrofit {
@@ -18,9 +20,4 @@ class NewsModule {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
-
-/*    @Provides
-    fun getRepository(): NewsRepository {
-        return NewsRepository()
-    }*/
 }

@@ -6,60 +6,43 @@
         android:id="@+id/layout_adapter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/cardViewBackGround"
         android:layout_margin="@dimen/margin_cardview"
         app:cardCornerRadius="5dp"
         android:elevation="5dp">
 
     <LinearLayout
-            android:orientation="horizontal"
+            android:orientation="vertical"
+            android:id="@+id/ll_adapter"
+            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        <LinearLayout
-                android:orientation="vertical"
-                android:gravity="start"
-                android:padding="10dp"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content">
-
-            <TextView
-                    android:text="@string/textview"
-                    android:visibility="invisible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:id="@+id/tv_author"/>
-
-            <TextView
-                    android:text="@string/textview"
-                    android:visibility="invisible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:id="@+id/tv_title"/>
-
-
-            <TextView
-                    android:visibility="invisible"
-                    android:text="@string/textview"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tv_description"/>
-
-        </LinearLayout>
-
-
-
         <ImageView
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                app:srcCompat="@mipmap/ic_launcher"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_size"
                 android:id="@+id/im_news"
                 android:contentDescription="@string/news_image"/>
+
+        <TextView
+                android:text="@string/unknown"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/tv_author"/>
+
+        <TextView
+                android:text="@string/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/tv_title"/>
+
+        <TextView
+                android:text="@string/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_description"/>
     </LinearLayout>
-
-
 </androidx.cardview.widget.CardView>
